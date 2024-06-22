@@ -1,0 +1,464 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ /* SearchBar Styling */
+ 
+ #search-bar-menu {
+     display: flex;
+     width: 100%;
+     height: 70px;
+     background-color: grey;
+ }
+ 
+ #logo-div {
+     width: 160px;
+     height: 60px;
+     margin-top: 4px;
+     margin-left: 10px;
+ }
+ 
+ #logo-div:hover {
+     border: 1px solid white;
+ }
+ 
+ #logo-div>a>img {
+     width: 140px;
+     height: 45px;
+     color: white;
+     margin: 5px;
+ }
+ /* location  */
+ 
+ .location-bar {
+     cursor: pointer;
+     width: 200px;
+     height: 60px;
+     margin-top: 4px;
+     margin-left: 10px;
+ }
+ 
+ .location-bar:hover {
+     border: 1px solid white;
+ }
+ 
+ .location-bar>p {
+     font-size: 14px;
+     color: rgb(52, 50, 50);
+     margin: 8px 5px 5px 24px;
+ }
+ 
+ .location-bar>i {
+     font-size: 20px;
+     margin-left: 12px;
+ }
+ /* Input SearchBar */
+ 
+ .input-search {
+     width: 200px;
+     height: 50px;
+     margin: 10px 5px 5px 15px;
+ }
+ 
+ .input-search #sort-down {
+     padding: 16px 22px 16px 16px;
+     border: none;
+     background-color: teal;
+     position: relative;
+     cursor: pointer;
+     border-top-left-radius: 4px;
+     border-bottom-left-radius: 4px;
+ }
+ 
+ .input-search #sort-down:hover {
+     opacity: 0.7;
+ }
+ 
+ .input-search #sort-down .fa-sort-down {
+     margin-left: 5px;
+     position: absolute;
+     top: 15px;
+ }
+ 
+ .input-search>input {
+     position: absolute;
+     width: 550px;
+     height: 48px;
+     border: none;
+     outline: none;
+ }
+ 
+ input::placeholder {
+     padding: 12px;
+     color: teal;
+     font-size: 17px;
+ }
+ 
+ .input-search #search {
+     width: 50px;
+     height: 48px;
+     background-color: #f08804;
+     position: absolute;
+     border: none;
+     left: 62.3rem;
+     border-top-right-radius: 4px;
+     border-bottom-right-radius: 4px;
+     cursor: pointer;
+ }
+ 
+ .input-search #search:hover {
+     opacity: 0.7;
+ }
+ 
+ .input-search #search>i {
+     font-size: 20px;
+ }
+ /* FlagBar */
+ 
+ .flag-bar {
+     position: absolute;
+     right: 390px;
+     width: 70px;
+     height: 60px;
+     margin-top: 5px;
+     cursor: pointer;
+ }
+ 
+ .flag-bar:hover {
+     border: 1px solid white;
+ }
+ 
+ .flag-bar div {
+     margin-left: 8px;
+     margin-top: 20px;
+ }
+ 
+ .flag-bar .fa-down {
+     position: absolute;
+     top: 25px;
+     left: 52px;
+ }
+ /* Hover Box */
+ 
+ .flag-bar ul {
+     width: 350%;
+     height: 310px;
+     background-color: whitesmoke;
+     display: list-item;
+     flex-wrap: nowrap;
+     list-style: none;
+     position: relative;
+     top: 15px;
+     display: none;
+ }
+ 
+ .flag-bar:hover ul {
+     display: block;
+ }
+ 
+ #main-lang {
+     margin-left: 14px;
+     margin-top: 10px;
+     margin-bottom: 12px;
+ }
+ 
+ a {
+     color: black;
+     text-decoration: none;
+ }
+ 
+ a:hover {
+     text-decoration: underline;
+     color: #f08804;
+ }
+ 
+ li {
+     list-style: none;
+ }
+ 
+ h5 {
+     margin-top: 20px;
+     margin-left: 25px;
+     color: blue;
+     cursor: pointer;
+     margin-right: 12px;
+     /* margin-bottom: 10px; */
+     border-bottom: 1px solid grey;
+ }
+ 
+ p {
+     font-size: 16px;
+     margin-left: 25px;
+ }
+ 
+ h4 {
+     margin-top: 10px;
+     margin-left: 25px;
+     font-size: 14px;
+     color: blue;
+     cursor: pointer;
+     margin-right: 12px;
+ }
+ 
+ #lang {
+     margin-left: 12px;
+     margin-top: 7px;
+ }
+ /* Sign in Styling */
+ 
+ .sign-in {
+     width: 180px;
+     height: 63px;
+     cursor: pointer;
+     position: relative;
+     bottom: -3px;
+     left: 35rem;
+ }
+ 
+ .sign-in:hover {
+     border: 1px solid white;
+ }
+ 
+ #sign-in {
+     position: absolute;
+     left: -12px;
+     top: 10px;
+     font-size: 18px;
+     color: white;
+     font-weight: 800;
+ }
+ 
+ #account-list {
+     position: absolute;
+     top: 30px;
+     left: 12px;
+     font-size: 20px;
+     color: whitesmoke;
+     font-weight: bold;
+ }
+ 
+ .account-down {
+     position: relative;
+     top: 33px;
+     left: 154px;
+     color: whitesmoke;
+ }
+ 
+ input:checked {
+     color: red;
+ }
+ /* Account Hover Bar */
+ 
+ .sign-in-hover {
+     width: 600px;
+     height: 460px;
+     background-color: whitesmoke;
+     position: relative;
+     right: 300px;
+     top: 45px;
+     display: none;
+ }
+ 
+ .sign-in:hover .sign-in-hover {
+     display: block;
+ }
+ 
+ #accoount-sign-in-btn {
+     background-color: #ffd814;
+     width: 250px;
+     height: 40px;
+     border-radius: 10px;
+     border: none;
+     margin-left: 30%;
+     margin-top: 12px;
+     cursor: pointer;
+ }
+ 
+ .sign-in-hover span {
+     display: inline-block;
+     margin-top: 12px;
+     margin-left: 219px;
+     font-size: 14px;
+ }
+ 
+ .sign-in-hover a {
+     color: blue;
+ }
+ 
+ .sign-in-hover a:hover {
+     color: #f08804;
+ }
+ 
+ .sign-in-hover .your-list {
+     margin-left: 20px;
+     margin-top: 12px;
+     display: flex;
+     flex-direction: column;
+     width: 260px;
+ }
+ 
+ h5 {
+     font-weight: 500;
+ }
+ 
+ .sign-in-hover .list {
+     color: black;
+     padding-top: 12px;
+ }
+ 
+ .sign-in-hover .your-account {
+     float: right;
+     display: flex;
+     flex-direction: column;
+     margin-top: -175px;
+     margin-right: 60px;
+ }
+ 
+ .your-account .account {
+     color: black;
+     padding-top: 12px;
+ }
+ /* RETURN & ORDER STYLING */
+ 
+ .return-order {
+     width: 90px;
+     height: 60px;
+     position: relative;
+     left: 565px;
+     top: 5px;
+     cursor: pointer;
+ }
+ 
+ .return-order:hover {
+     border: 1px solid white;
+ }
+ 
+ .return-order h3 {
+     margin-top: 12px;
+     font-size: 16px;
+     color: rgba(255, 255, 255, 0.77);
+ }
+ /* CART SECTION STYLING */
+ 
+ .cart {
+     width: 94px;
+     height: 60px;
+     position: relative;
+     left: 567px;
+     margin-top: 3px;
+ }
+ 
+ .cart:hover {
+     border: 1px solid white;
+ }
+ 
+ .cart .fa-hands-holding {
+     font-size: 30px;
+     margin-left: 12px;
+     margin-top: -6px;
+ }
+ 
+ .cart span {
+     font-size: 17px;
+     font-weight: bolder;
+ }
+ 
+ .cart p {
+     position: relative;
+     top: 10px;
+     font-size: 20px;
+     color: #f08804;
+     font-weight: bolder;
+ }
+ /* NAVBAR SECTION STYLING */
+ 
+ .nav-container {
+     width: 100%;
+     height: 50px;
+     background-color: #004b91;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ 
+ .nav-link {
+     padding: 12px;
+     color: white;
+ }
+ /* FRESH HOVER STYLING  */
+ 
+ .fresh-hover {
+     width: 450px;
+     height: 360px;
+     background-color: rgba(94, 94, 94, 0.36);
+     position: absolute;
+     right: 64.7%;
+     top: 115px;
+     display: none;
+ }
+ 
+ ul:hover .fresh-hover {
+     display: block;
+ }
+ 
+ .nav-container .fresh-hover h1 {
+     color: black;
+     font-size: 25px;
+     margin: 20px;
+     cursor: default;
+ }
+ 
+ .img-1 {
+     display: flex;
+     margin: 20px;
+     width: 165px;
+     height: 165px;
+     background-color: rgba(128, 128, 128, 0.373);
+ }
+ 
+ img {
+     margin: 20px;
+     width: 130px;
+     height: 100px;
+ }
+ 
+ .img-2 {
+     margin-left: 40px;
+     width: 165px;
+     height: 165px;
+     background-color: rgba(128, 128, 128, 0.373);
+ }
+ 
+ .hr-2 {
+     margin: 60px 20px 0px 20px;
+     cursor: default;
+     color: grey;
+ }
+ 
+ .groceries-link {
+     display: inline-block;
+     color: blue;
+     margin-top: 20px;
+     margin-left: 20px;
+ }
+ 
+ .prime-amazon {
+     width: 450px;
+     height: 360px;
+     background-color: rgba(94, 94, 94, 0.36);
+     position: absolute;
+     right: 15.5%;
+     top: 115px;
+     display: none;
+ }
+ 
+ #prime-hover:hover .prime-amazon {
+     display: block;
+ }
+ 
+ .prime-amazon img {
+     width: 400px;
+     height: 320px;
+ }
+ /* HUMBURGER MENU STYLING */
