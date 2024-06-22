@@ -7,7 +7,7 @@
  
  #search-bar-menu {
      display: flex;
-     width: 100%;
+     width: 100vw;
      height: 70px;
      background-color: grey;
  }
@@ -462,3 +462,67 @@
      height: 320px;
  }
  /* HUMBURGER MENU STYLING */
+ 
+ .humburger {
+     height: 42.6rem;
+     width: 30%;
+     background-color: white;
+     /* z-index: 100; */
+     position: absolute;
+     left: 0px;
+     top: 10px;
+     overflow: scroll;
+     display: none;
+ }
+ 
+ #humburger-hover:hover .humburger {
+     display: block;
+ }
+ 
+ .humburger .signin-user {
+     width: 100%;
+     height: 60px;
+     background-color: #232f3e;
+     border: 1px solid;
+     padding: 15px 0px 0px 55px;
+ }
+ 
+ .humburger .signin-user a {
+     text-decoration: none;
+     color: white;
+     font-size: 24px;
+ }
+ 
+ .humburger .signin-user i {
+     margin-right: 10px;
+ }
+ 
+ .humburger .trending {
+     /* padding: 25px; */
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .humburger .trending h2 {
+     margin: 20px;
+ }
+ 
+ .humburger .trending a {
+     padding-left: 25px;
+     height: 40px;
+     width: 100%;
+     text-decoration: none;
+     color: black;
+     font-size: 22px;
+     margin-top: 10px;
+     align-items: center;
+ }
+ 
+ .humburger .trending a:hover {
+     background-color: #232f3e66;
+ }
+ 
+ .humburger .trending hr {
+     margin-top: 5px;
+     color: rgb(0, 0, 0);
+ }
