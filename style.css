@@ -391,11 +391,12 @@
  .fresh-hover {
      width: 450px;
      height: 360px;
-     background-color: rgba(94, 94, 94, 0.36);
+     background-color: whitesmoke;
      position: absolute;
      right: 64.7%;
      top: 115px;
      display: none;
+     z-index: 1111111;
  }
  
  ul:hover .fresh-hover {
@@ -467,7 +468,7 @@
      height: 42.6rem;
      width: 30%;
      background-color: white;
-     /* z-index: 100; */
+     z-index: 11111;
      position: absolute;
      left: 0px;
      top: 10px;
@@ -526,3 +527,64 @@
      margin-top: 5px;
      color: rgb(0, 0, 0);
  }
+ /* SLIDER BAR STYLING */
+ 
+ #box {
+     padding: 0px;
+     position: relative;
+ }
+ 
+ .slides {
+     position: relative;
+     transition: transform 0.5s;
+ }
+ 
+ .slides>img {
+     margin-top: -0px;
+     margin-left: -0px;
+     width: 100%;
+     height: fit-content;
+     overflow: hidden;
+ }
+ 
+ #pre,
+ #next {
+     padding: 10px;
+     font-size: 29px;
+     position: absolute;
+     top: 30%;
+     border: none;
+     background-color: white;
+     color: rgb(71, 64, 64);
+     transition: all 1s;
+     cursor: pointer;
+ }
+ 
+ #pre:hover,
+ #next:hover {
+     opacity: 1;
+ }
+ 
+ #pre {
+     border-radius: 0px 5px 5px 0px;
+ }
+ 
+ #next {
+     right: 6px;
+     border-radius: 5px 0px 0px 5px;
+ }
+ /* #dots {
+     width: 50%;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: auto;
+     gap: 10px;
+ } */
+ /* #dots>div {
+     width: 20px;
+     height: 5px;
+     background-color: black;
+     border-radius: 4px;
+ } */
